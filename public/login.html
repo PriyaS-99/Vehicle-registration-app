@@ -1,0 +1,115 @@
+<html> 
+<head> 
+<title>Login Page</title>
+<script> 
+function validate()                                    
+{ 
+    var name = document.forms["RegForm"]["Name1"];               
+    var password = document.forms["RegForm"]["Password"];  
+   if (name.value == "" || password.value == "")                                  
+    { 
+        window.alert("Please enter the credentials!!"); 
+        name.focus(); 
+        return false; 
+    } 
+      
+   if (password.value != "vehiclertoblore")                        
+    { 
+        window.alert("Incorrect password!!"); 
+        password.focus(); 
+        return false; 
+    } 
+   return true; 
+}
+
+</script> 
+  
+<style> 
+validate {                                         
+    margin-left: 70px; 
+    font-weight: bold ; 
+    float: left; 
+    clear: left; 
+    width: 100px; 
+    text-align: left; 
+    margin-right: 10px; 
+    font-family:sans-serif,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+   
+
+    
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+form {                                         
+    margin: 0 auto; 
+    width: 600px; 
+}
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+body {
+
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    color: #696969;
+    padding: 3px;
+}
+input[type=text] {
+  width: 60%;
+  margin-bottom: 2px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=password] {
+  width: 60%;
+  margin-bottom: 2px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+</style></head> 
+   
+<body> 
+<fieldset>
+<legend><h1 style="text-align: center"> Login Form </h1></legend>           
+<form name="RegForm" onsubmit="return validate()" action="/insert.html" >  
+     <p><h3>Username: <input type="text" size=65 name="Name1"></h3> </p><br>        
+     <p><h3>Password: <input type="password" size=65 name="Password"></h3> </p><br>   
+	 <div style = "position:relative; left:250px;">
+      <div class="col-50">	 
+<form>
+     
+     <button class="btn" onclick="myFunction()">Login</button>        
+</form>
+</div>
+
+</form> 
+<div class="col-50">	 
+<form>
+     
+     <button class="btn" onclick="myFunction()">Cancel</button>        
+</form>
+</div>
+<div class="col-50">   
+  <form action="/index.html" >
+    <button class="btn" >Home</button>
+  </form>  
+     </div> </div>
+</fieldset> 
+</body> 
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Home</title>
+<script src="angular/angular.min.js"> </script>
+<style type="text/css">
+
+.box {width: 1300px; height: 80px; font-size:20;position:relative;bottom:6px;left:30px; }
+.box1 {width: 200px; height: 40px; position: fixed; bottom:480px;left:20px;}
+.box2 {width: 1315px; height: 60px; position: fixed; left:210px ;bottom: 10px; }
+.box3 {width: 100px; height: 10px; position: fixed; left: 390px; bottom: 470px }
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+nav a {
+text-decoration:none;
+display:block;
+background-color: #000033;
+border: 3px ;
+border-style: solid;
+border-color: white;
+padding:15px 25px;
+text-align: center;
+color:white;
+margin:0;
+height: 50px;
+
+
+}
+
+nav a:hover {
+background-color: #f2f2f2;
+color:black;
+}
+.btn:link, btn:visited {
+  width: 200px;
+  background-color: #D8D8D8;
+  text-color:black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 40px;
+}
+
+.btn:hover, btn:active {
+  background-color: green;
+  color: white;
+}
+.btn1:link, btn1:visited {
+  width: 250px;
+  background-color: #C0C0C0;
+  text-color:black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 150px;
+}
+
+.btn1:hover, btn1:active {
+  background-color: green;
+  color: white;
+}
+b{font-family :"Arial Black", Gadget, sans-serif;}
+</style>
+<link rel="stylesheet" href="ex.css">
+</head>
+
+<body ng-app>
+
+<div class="box">
+<h1 align="center"; style="color:#000033";><b>VEHICLE DETAILS </b></h1>
+<a href="/welcome.html" class="btn" >WELCOME </a>
+<a href="/about.html" class="btn">ABOUT </a>
+<a href="/contact.html" class="btn">CONTACT US </a>
+<a href="/details.html" class="btn">DETAILS </a>
+
+</div>
+<br>
+
+<div class="box3">
+<img src="vehicle.jpg" alt="Vehicle" height="400" width="840">
+</div>
+
+<nav>
+<div class="box1">
+
+          <a href="login.html" > NEW REGISTRATION </a> 
+          <a href="search.html"> SEARCH </a> 
+          <a href="update.html"> UPDATE </a> 
+          <a href="/display"> VEHICLE FULL DETAILS </a> 
+          <a href="/shortdisplay"> VEHICLE BRIEF DETAILS </a> 
+          <a href="delete.html"> DELETE </a> 
+            
+</div>
+</nav>
+
+<div class="box2">
+    <a href="/termcond.html" class="btn1" >TERMS & CONDITIONS </a>
+    <a href="/rate.html" class="btn1">RATE US </a>
+</div>
+</body>
+</html>

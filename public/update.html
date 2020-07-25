@@ -1,0 +1,125 @@
+<html>  
+<head>
+<title>Update</title>
+<script src="angular/angular.min.js"> </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+body {
+
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    color: #696969;
+    padding: 3px;
+}
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}  
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 30%; 
+  flex: 30%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+input[type=text] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+</style
+<body>  
+<h1>UPDATE</h1>
+<h2>Enter the vehicle registration number whose details has to be updated</h2>
+<form action="update" method="get">  
+<h3>Vehicle registration number: <input type="text" name="rgno"></h3> 
+<h2>Enter the new required details below</h2> 
+ <div class="row">
+      <div class="col-50">
+<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="James M Eva" required ng-model="data.fname" /> <br />
+         <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="email@example.com" required ng-model="data.email" /><br  />
+         <label for="aadhar"><i class="fa fa-address-card-o"></i> Aadhar Number </label>
+            <input type="text" id="aadhar" name="aadhar" placeholder="XXXX XXXX XXXX XXXX" required ng-model="data.aadhar" /><br  />
+         <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="adr" ng-model="data.adr" /> <br />
+         <div class="row">
+              <div class="col-25">
+                <label for="are"> Area </label>
+                <input type="text" id="are" name="are" ng-model="data.are"/>
+              </div>
+              <div class="col-25">
+                <label for="city"><i class="fa fa-institution"></i> City </label>
+                <input type="text" id="city" name="city" ng-model="data.city"/>
+              </div>
+              <div class="col-25">
+                <label for="pin">Pincode</label>
+                <input type="text" id="pin" name="pin" ng-model="data.pin"/>
+              </div>
+              <div class="col-50">
+                <label for="mobile"><i class="fa fa-mobile"></i> Contact Number </label>
+                <input type="text" id="mobile" name="mobile" placeholder="+91" required ng-model="data.mobile" />
+              </div>
+              <div class="col-50">
+                <label for="alt"><i class="fa fa-mobile"></i> Alternate Number </label>
+                <input type="text" id="alt" name="alt" placeholder="+91" ng-model="data.alt" />
+              </div>
+         </div>
+		 </div>
+		 </div> 
+<div class="col-50">  
+<input type="submit" value="Submit" class="btn">  </div>
+</form>  
+<div class="col-50">   
+  <form action="/index.html" >
+    <button class="btn" >Home</button>
+  </form>  
+     </div>
+
+</body>  
+</html> 
